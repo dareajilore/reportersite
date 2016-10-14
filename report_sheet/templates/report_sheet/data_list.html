@@ -1,0 +1,20 @@
+<html>
+<head>
+<div> Hello</div>
+</head>
+<body>
+<div><h1> <a href="{%url 'report_new'%}">
+ New Report </a></h1>
+<div>
+{%for post in posts%}
+<div> 
+	<p> GT11_2400: {{post.GT11_2400|linebreaksbr}}</p>
+	<p>GT11_0000: {{post.GT11_0000|linebreaksbr}}</p>
+	<p> GT11_1800: {{post.GT11_1800|linebreaksbr}}</p>
+</div>
+{%endfor%}
+	
+<p> Just trying this out </p>
+</body>
+</html>
+

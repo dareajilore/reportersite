@@ -1,0 +1,13 @@
+<html>
+<head>Hello</head>
+<body> 
+<div><h1> <a href="{%url 'report_new'%}">
+ New Report </a></h1>
+<div>
+<form method="POST" class="report-form">
+{%csrf_token%}
+{{form.as_p}}
+<bottom type="submit" class="save btn btn - default">save</button> </form>
+</div>
+</body>
+</html>
